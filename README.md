@@ -86,7 +86,6 @@ Next is loading the data from the csv file from Kaggle.
   
   ![Screenshot 2024-10-28 222342](https://github.com/user-attachments/assets/e915d06a-2320-4dee-9141-fea925b18baf)
 
-
 ###  Top Performers
 - Which track has the highest number of streams? Display the top 5 most streamed tracks.
 
@@ -104,7 +103,20 @@ Next is loading the data from the csv file from Kaggle.
 ### Temporal Trends
 - Analyze the trends in the number of tracks released over time. Plot the number of tracks released per year.
 
+      tracks_per_year = spotify_data['released_year'].value_counts().reset_index()
+      tracks_per_year.columns = ['released_year', 'track_count']
+      tracks_per_year = tracks_per_year.sort_values(by='released_year')
 
+      plt.figure(figsize=(12, 6))
+      sns.barplot(data=tracks_per_year, x='released_year', y='track_count', color='gold')
+      plt.title('Number of Tracks Released per Year')
+      plt.xlabel('Released Year')
+      plt.ylabel('Number of Tracks')
+      plt.xticks(rotation=45)  # Rotate x-axis labels for better readability
+      plt.grid(axis='y')
+      plt.tight_layout()
+      plt.show()
 
+![image](https://github.com/user-attachments/assets/42779727-01df-4e72-9bce-2392f60cab3a)
 
 - Does the number of tracks released per month follow any noticeable patterns? Which month sees the most releases?
