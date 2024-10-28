@@ -9,10 +9,6 @@ Date and Time Ended: **October 30, 2024, 3:08 AM**
 ## Brief Description
 **Exploratory Data Analysis (EDA)** is a process of analyzing and summarizing datasets to identify patterns, trends, and relationships using visual and statistical methods. It helps in understanding the data's structure and guiding further analysis.
 
-
- ![EDA](https://github.com/user-attachments/assets/3ffa0a97-377f-4e5c-b441-d600b45cfc38)
-
-
 This repository contains a comprehensive exploratory data analysis (EDA) of the Most Streamed Spotify Songs 2023 dataset, sourced from Kaggle. The analysis aims to visualize and interpret key features of popular tracks to extract meaningful insights about music trends and attributes. 
 
 #### Key Objectives:
