@@ -18,4 +18,4 @@ This repository contains a comprehensive exploratory data analysis (EDA) of the 
 - **Correlation Analysis**: Investigate relationships between streams and musical characteristics, and explore correlations between attributes like danceability and energy.
 - **Insights & Recommendations**: Offer insights into what makes tracks popular, including patterns in artist frequency and platform preferences.
 
-## 
+## Guide Questions
