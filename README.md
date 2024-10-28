@@ -50,7 +50,7 @@ Next is loading the data from the csv file from Kaggle.
       print("\nMissing Values in Each Column:")
       print(missing_values[missing_values > 0])
 
-  ### Basic Descriptive Statistics
+### Basic Descriptive Statistics
 - What are the mean, median, and standard deviation of the streams column?
 
       spotify_data['streams'] = pd.to_numeric(spotify_data['streams'], errors='coerce')
@@ -83,8 +83,11 @@ Next is loading the data from the csv file from Kaggle.
 
       plt.tight_layout()
       plt.show()
+  
+  ![Screenshot 2024-10-28 222342](https://github.com/user-attachments/assets/e915d06a-2320-4dee-9141-fea925b18baf)
 
-  ###  Top Performers
+
+###  Top Performers
 - Which track has the highest number of streams? Display the top 5 most streamed tracks.
 
       top_5_tracks = spotify_data.sort_values(by='streams', ascending=False).head(5).reset_index()
@@ -99,6 +102,9 @@ Next is loading the data from the csv file from Kaggle.
       top_5_freqarts
 
 ### Temporal Trends
+- Analyze the trends in the number of tracks released over time. Plot the number of tracks released per year.
 
-Analyze the trends in the number of tracks released over time. Plot the number of tracks released per year.
-Does the number of tracks released per month follow any noticeable patterns? Which month sees the most releases?
+
+
+
+- Does the number of tracks released per month follow any noticeable patterns? Which month sees the most releases?
