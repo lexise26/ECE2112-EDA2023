@@ -37,3 +37,15 @@ Next is loading the data from the csv file from Kaggle.
 
       print('Rows:', rows)
       print('Columns:', cols)
+  
+- What are the data types of each column? Are there any missing values?
+
+        data_types = spotify_data.dtypes
+
+        print("Data Types of Each Column:")
+        print(data_types)
+
+        missing_values = spotify_data.isnull().sum()
+
+        print("\nMissing Values in Each Column:")
+        print(missing_values[missing_values > 0])  
