@@ -24,3 +24,9 @@ This repository contains a comprehensive exploratory data analysis (EDA) of the 
 
 ## Guide Questions
 ### Overview of Dataset
+- How many rows and columns does the dataset contain?
+  
+      rows, cols = spotify_data.shape
+
+      print('Rows:', rows)
+      print('Columns:', cols)
