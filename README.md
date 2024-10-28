@@ -19,6 +19,17 @@ This repository contains a comprehensive exploratory data analysis (EDA) of the 
 - **Insights & Recommendations**: Offer insights into what makes tracks popular, including patterns in artist frequency and platform preferences.
 
 ## Guide Questions
+Before anything else, importing the needed library is the first thing we need to do for the code to run smoothly.
+
+    import pandas as pd
+    import matplotlib.pyplot as plt
+    import seaborn as sns
+
+Next is loading the data from the csv file from Kaggle.
+
+    spotify_data = pd.read_csv('spotify-2023.csv', encoding='ISO-8859-1')
+    spotify_data
+
 ### Overview of Dataset
 - How many rows and columns does the dataset contain?
   
