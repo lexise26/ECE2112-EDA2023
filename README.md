@@ -6,6 +6,7 @@ Created by: **Custodio, Louise Angela G.** from **2ECE-D**
 
 **Date and Time Ended:** October 30, 2024, 3:08 AM
 
+## Brief Description
 This repository contains a comprehensive exploratory data analysis (EDA) of the Most Streamed Spotify Songs 2023 dataset, sourced from Kaggle. The analysis aims to visualize and interpret key features of popular tracks to extract meaningful insights about music trends and attributes.
 
 Key Objectives:
