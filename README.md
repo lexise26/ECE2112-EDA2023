@@ -54,7 +54,7 @@ The next step involves loading the dataset from a CSV file obtained from Kaggle.
       print('Rows:', rows)
       print('Columns:', cols)
 
-  ![image](https://github.com/user-attachments/assets/efccf85b-8f89-4e33-a0b8-924ebef08a96)
+The dataset contains 953 rows and 24 columns.
 
 To assess the dataset’s size, we use the `shape` attribute in Pandas, which indicates it contains 953 rows and 24 columns. This means there are 953 data entries, each with 24 attributes. The `shape` attribute quickly reveals the dimensions of the DataFrame, helping to understand the dataset's scale.
 
