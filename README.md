@@ -13,9 +13,13 @@ This repository contains a comprehensive exploratory data analysis (EDA) of the 
 
 #### Key Objectives:
 ◦ **Dataset Overview**: Familiarize with the dataset structure, check for missing values, and identify data types.
+
 ◦ **Summary Statistics**: Provide metrics on streams, release dates, and musical attributes like BPM and danceability.
+
 ◦ **Visualizations**: Create well-labeled visualizations (bar charts, histograms, scatter plots) to uncover trends and patterns in the data.
+
 ◦ **Correlation Analysis**: Investigate relationships between streams and musical characteristics, and explore correlations between attributes like danceability and energy.
+
 ◦ **Insights & Recommendations**: Offer insights into what makes tracks popular, including patterns in artist frequency and platform preferences.
 
 ## Guide Questions
