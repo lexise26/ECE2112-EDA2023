@@ -28,13 +28,15 @@ Before anything else, importing the needed library is the first thing we need to
     import matplotlib.pyplot as plt
     import seaborn as sns
 
-![image](https://github.com/user-attachments/assets/7ed14d3e-6d73-40c2-b184-a53b390a81a9)
+To start, we import essential libraries: Pandas for data manipulation, allowing easy handling of datasets, and Matplotlib with Seaborn for creating clear and visually appealing charts. These ensure smooth data processing and insightful visualizations.
 
 Next is loading the data from the csv file from Kaggle.
 
     # Load the data from the CSV file and print the results
     spotify_data = pd.read_csv('spotify-2023.csv', encoding='ISO-8859-1')
     spotify_data
+
+![image](https://github.com/user-attachments/assets/7ed14d3e-6d73-40c2-b184-a53b390a81a9)
 
 ### Overview of Dataset
 - How many rows and columns does the dataset contain?
