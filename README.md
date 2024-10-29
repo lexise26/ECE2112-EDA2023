@@ -44,7 +44,7 @@ To start, we import essential libraries: Pandas for data manipulation, allowing 
 
 The next step involves loading the dataset from a CSV file obtained from Kaggle. Using `pd.read_csv('spotify-2023.csv', encoding='ISO-8859-1')`, the data is read into a Pandas DataFrame, allowing for easy organization and manipulation in a table-like structure. The specified encoding, `ISO-8859-1`, ensures special characters are correctly interpreted, which is sometimes necessary for datasets with non-standard characters. Displaying spotify_data confirms successful loading and provides a quick preview of the data’s structure, making it ready for further analysis and visualization.
 
-### Overview of Dataset
+**### Overview of Dataset**
 - How many rows and columns does the dataset contain?
 
       # Get the number of rows and columns by using the .shape function
@@ -193,7 +193,7 @@ To determine the top five most frequent artists based on the number of tracks in
 
 ![image](https://github.com/user-attachments/assets/42779727-01df-4e72-9bce-2392f60cab3a)
 
-**DESCRIPTION**
+This code analyzes the trends in the number of tracks released over time by first counting the occurrences of each release year in the "released_year" column of the `spotify_data` DataFrame. The counts are organized into a new DataFrame with clear column names, which is then sorted chronologically. A bar plot is created using Seaborn, with the x-axis representing the release years and the y-axis showing the corresponding track counts, colored gold for clarity. The plot includes a title and axis labels, with x-axis labels rotated for better readability. Grid lines on the y-axis enhance the visualization, making it easier to identify trends and shifts in music production over the years.
 
 - Does the number of tracks released per month follow any noticeable patterns? Which month sees the most releases?
 
@@ -238,7 +238,7 @@ To determine the top five most frequent artists based on the number of tracks in
 ![image](https://github.com/user-attachments/assets/4996406d-f1ad-4dce-ac87-e41e8370738e)
 ![image](https://github.com/user-attachments/assets/c8bf1b25-d3b8-4db3-95b9-edf49d879681)
 
-**DESCRIPTION**
+The code analyzes the number of tracks released each month in the dataset to identify patterns and determine the month with the highest releases. It begins by converting the `released_month` column to string format, ensuring consistent data processing. Next, it counts the tracks released in each month using `value_counts()` and sorts the results. A `dictionary maps` month strings to integers, allowing for proper sorting and indexing. The code then creates a bar plot using Seaborn to visualize the number of tracks released per month, with the x-axis representing the months and the y-axis showing the track counts. Finally, it identifies the month with the highest number of releases using `idxmax()` and prints this information along with the corresponding track count. 
 
 ### Genre and Music Characteristics
 - Examine the correlation between streams and musical attributes like bpm, danceability_%, and energy_%. Which attributes seem to influence streams the most?
@@ -282,7 +282,7 @@ To determine the top five most frequent artists based on the number of tracks in
 ![image](https://github.com/user-attachments/assets/b424e216-aa9f-4a2b-bf70-b524a3086bc9)
 ![image](https://github.com/user-attachments/assets/5957ce18-d666-4230-a636-9aac9ec05ecc)
 
-**DESCRIPTION**
+The code analyzes the correlation between streams and musical attributes such as BPM, danceability, and energy percentage. It selects these attributes from the dataset and computes their correlation with the `streams` variable using the `corr()` method, displaying the results in descending order to identify the strongest relationships. Additionally, it creates scatter plots for each attribute against streams, allowing for a visual examination of their relationships. This analysis helps to determine which musical features most significantly influence streaming performance, offering insights into factors that contribute to a track's popularity.
 
 - Is there a correlation between danceability_% and energy_%? How about valence_% and acousticness_%?
 
@@ -325,8 +325,7 @@ To determine the top five most frequent artists based on the number of tracks in
 ![image](https://github.com/user-attachments/assets/a8810a8d-01e6-45c7-8edb-398d1b8e8c07)
 ![image](https://github.com/user-attachments/assets/16ecaf42-5153-4d57-8819-386266a5cfe5)
 
-
-**DESCRIPTION**
+The code shows the correlation between musical attributes, specifically danceability and energy, as well as valence and acousticness. First, it defines the relevant attributes and calculates their correlation matrix using the `corr()` method. The correlations for the pairs of interest are printed to assess their relationships. Following this, scatter plots are created for both pairs to visualize the correlation between danceability and energy, and valence and acousticness. These visualizations help to discern patterns in how these musical characteristics interact, providing insights into their relationships within the dataset.
 
 ### Platform Popularity
 - How do the numbers of tracks in spotify_playlists, spotify_charts, and apple_playlists compare? Which platform seems to favor the most popular tracks?
@@ -354,7 +353,7 @@ To determine the top five most frequent artists based on the number of tracks in
 
 ![image](https://github.com/user-attachments/assets/1aa8eb62-87d1-4bdc-a9a3-0063f7c33d9f)
 
-**DESCRIPTION**
+The code evaluates the number of tracks featured in different playlists and charts across Spotify and Apple Music. It calculates the total count of tracks in Spotify playlists, Spotify charts, and Apple playlists by summing the respective columns in the dataset. The results for each platform are printed to compare their track counts. Subsequently, an `if-elif` statement determines which platform favors the most popular tracks based on the highest count, concluding with the identification of the platform that showcases the most popular tracks. This analysis provides insight into the distribution of popular tracks across various streaming services.
 
 ### Advanced Analysis
 - Based on the streams data, can you identify any patterns among tracks with the same key or mode (Major vs. Minor)?
@@ -362,32 +361,32 @@ To determine the top five most frequent artists based on the number of tracks in
       # Set the figure size for the plot
       plt.figure(figsize=(12, 6))
 
-# Create a box plot to show the distribution of streams by key and mode
+      # Create a box plot to show the distribution of streams by key and mode
       sns.boxplot(data=spotify_data, x='key', y='streams', hue='mode', palette='Set3')
 
-# Set the title of the plot
+      # Set the title of the plot
       plt.title('Distribution of Streams by Key and Mode (Major vs. Minor)')
 
-# Label the x and y axes
+      # Label the x and y axes
       plt.xlabel('Key')
       plt.ylabel('Streams')
 
-# Rotate x-axis labels for better readability
+      # Rotate x-axis labels for better readability
       plt.xticks(rotation=45) 
 
-# Add a legend with title for the hue variable (mode)
+      # Add a legend with title for the hue variable (mode)
       plt.legend(title='Mode')
 
-# Enable grid lines on the y-axis 
+      # Enable grid lines on the y-axis 
       plt.grid(axis='y')
 
-# Adjust layout to prevent overlap and show the result
+      # Adjust layout to prevent overlap and show the result
       plt.tight_layout()
       plt.show()
 
 ![image](https://github.com/user-attachments/assets/405c5d69-9d06-4bcd-8228-3a953ec5388c)
 
-**DESCRIPTION**
+The code examines the distribution of streams for tracks categorized by musical key and mode (Major vs. Minor). A box plot is created using Seaborn to visualize how streams vary across different keys, with the mode distinguished by color. The plot is titled "Distribution of Streams by Key and Mode (Major vs. Minor)" and includes labeled axes for clarity. The x-axis labels are rotated for better readability, and a legend is added to differentiate between Major and Minor modes. Grid lines on the y-axis enhance the readability of stream counts, while the layout adjustments ensure that all elements are displayed clearly. This analysis allows for the identification of patterns in streaming performance based on key and mode.
 
 - Do certain genres or artists consistently appear in more playlists or charts? Perform an analysis to compare the most frequently appearing artists in playlists or charts.
 
@@ -419,5 +418,5 @@ To determine the top five most frequent artists based on the number of tracks in
 
   ![image](https://github.com/user-attachments/assets/1c5a3743-90d5-4fe4-bb38-3f57b6659ca1)
 
-**DESCRIPTION**
+The code analyzes the frequency of artist appearances in playlists and charts by counting each artist's occurrences in the dataset. It uses the `value_counts()` function on the `artist(s)_name` column to tally the number of times each artist appears and resets the index for organization. The resulting DataFrame is renamed for clarity, and a bar plot is generated to visualize the top 10 artists by appearance count. The plot features the number of appearances on the x-axis and artist names on the y-axis, with distinct colors for each artist. This visualization highlights which artists are most frequently featured in playlists and charts, indicating their popularity in the music industry.
   
