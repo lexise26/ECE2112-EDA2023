@@ -19,24 +19,24 @@ This repository contains a comprehensive exploratory data analysis (EDA) of the 
 - **Insights & Recommendations**: Offer insights into what makes tracks popular, including patterns in artist frequency and platform preferences.
 
 ## Guide Questions
-Before anything else, importing the needed library is the first thing we need to do for the code to run smoothly.
+- Before anything else, importing the needed library is the first thing we need to do for the code to run smoothly.
 
-    # Importing the Pandas for data manipulation 
-    import pandas as pd
+      # Importing the Pandas for data manipulation 
+      import pandas as pd
     
-    # Importing the Matplotlib and Seaborn for visualization
-    import matplotlib.pyplot as plt
-    import seaborn as sns
+      # Importing the Matplotlib and Seaborn for visualization
+      import matplotlib.pyplot as plt
+      import seaborn as sns
+To start, we import essential libraries: Pandas for data manipulation, allowing easy handling of datasets, and Matplotlib with Seaborn for creating clear and visually appealing charts. These ensure smooth data processing and insightful visualizations. Together, these libraries make it possible to explore data thoroughly and present insights effectively.
 
-To start, we import essential libraries: Pandas for data manipulation, allowing easy handling of datasets, and Matplotlib with Seaborn for creating clear and visually appealing charts. These ensure smooth data processing and insightful visualizations.
+- Next is loading the data from the csv file from Kaggle.
 
-Next is loading the data from the csv file from Kaggle.
-
-    # Load the data from the CSV file and print the results
-    spotify_data = pd.read_csv('spotify-2023.csv', encoding='ISO-8859-1')
-    spotify_data
+      # Load the data from the CSV file and print the results
+      spotify_data = pd.read_csv('spotify-2023.csv', encoding='ISO-8859-1')
+      spotify_data
 
 ![image](https://github.com/user-attachments/assets/7ed14d3e-6d73-40c2-b184-a53b390a81a9)
+The next step involves loading the dataset from a CSV file obtained from Kaggle. Using pd.read_csv('spotify-2023.csv', encoding='ISO-8859-1'), the data is read into a Pandas DataFrame, allowing for easy organization and manipulation in a table-like structure. The specified encoding, ISO-8859-1, ensures special characters are correctly interpreted, which is sometimes necessary for datasets with non-standard characters. Displaying spotify_data confirms successful loading and provides a quick preview of the data’s structure, making it ready for further analysis and visualization.
 
 ### Overview of Dataset
 - How many rows and columns does the dataset contain?
