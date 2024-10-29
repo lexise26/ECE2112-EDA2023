@@ -74,7 +74,7 @@ To assess the dataset’s size, we use the `shape` attribute in Pandas, which in
       print("\nMissing Values in Each Column:")
       print(missing_values[missing_values > 0])
 
-<img src="https://github.com/user-attachments/assets/36fc112c-9d88-4ced-8ddb-5655a7ab043d" width="300" height="600"> 
+<img src="https://github.com/user-attachments/assets/36fc112c-9d88-4ced-8ddb-5655a7ab043d" width="300" height="400"> 
 
 To identify the data types of each column and check for missing values in the dataset, we use the following code. The `dtypes` attribute provides the data type for each column, which helps us understand how the data is structured and what kind of operations can be performed. Additionally, the `isnull().sum()` method counts any missing values in each column. This information is crucial for ensuring data quality before analysis.
 
