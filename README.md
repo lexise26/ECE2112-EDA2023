@@ -435,6 +435,7 @@ We also found clear trends in track releases over time, noticing both an increas
 ## References
 
 - Most streamed Spotify Songs 2023. (2023, August 26). Kaggle. https://www.kaggle.com/datasets/nelgiriyewithana/top-spotify-songs-2023
+- seaborn: statistical data visualization — seaborn 0.13.2 documentation. (n.d.). https://seaborn.pydata.org/
 
 ## Acknowledgement
 
