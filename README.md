@@ -12,11 +12,11 @@ Date and Time Ended: **October 30, 2024, 3:08 AM**
 This repository contains a comprehensive exploratory data analysis (EDA) of the Most Streamed Spotify Songs 2023 dataset, sourced from Kaggle. The analysis aims to visualize and interpret key features of popular tracks to extract meaningful insights about music trends and attributes. 
 
 #### Key Objectives:
-- **Dataset Overview**: Familiarize with the dataset structure, check for missing values, and identify data types.
-- **Summary Statistics**: Provide metrics on streams, release dates, and musical attributes like BPM and danceability.
-- **Visualizations**: Create well-labeled visualizations (bar charts, histograms, scatter plots) to uncover trends and patterns in the data.
-- **Correlation Analysis**: Investigate relationships between streams and musical characteristics, and explore correlations between attributes like danceability and energy.
-- **Insights & Recommendations**: Offer insights into what makes tracks popular, including patterns in artist frequency and platform preferences.
+◦ **Dataset Overview**: Familiarize with the dataset structure, check for missing values, and identify data types.
+◦ **Summary Statistics**: Provide metrics on streams, release dates, and musical attributes like BPM and danceability.
+◦ **Visualizations**: Create well-labeled visualizations (bar charts, histograms, scatter plots) to uncover trends and patterns in the data.
+◦ **Correlation Analysis**: Investigate relationships between streams and musical characteristics, and explore correlations between attributes like danceability and energy.
+◦ **Insights & Recommendations**: Offer insights into what makes tracks popular, including patterns in artist frequency and platform preferences.
 
 ## Guide Questions
 - Before anything else, importing the needed library is the first thing we need to do for the code to run smoothly.
@@ -36,6 +36,7 @@ To start, we import essential libraries: Pandas for data manipulation, allowing 
       spotify_data
 
 ![image](https://github.com/user-attachments/assets/7ed14d3e-6d73-40c2-b184-a53b390a81a9)
+
 The next step involves loading the dataset from a CSV file obtained from Kaggle. Using pd.read_csv('spotify-2023.csv', encoding='ISO-8859-1'), the data is read into a Pandas DataFrame, allowing for easy organization and manipulation in a table-like structure. The specified encoding, ISO-8859-1, ensures special characters are correctly interpreted, which is sometimes necessary for datasets with non-standard characters. Displaying spotify_data confirms successful loading and provides a quick preview of the data’s structure, making it ready for further analysis and visualization.
 
 ### Overview of Dataset
