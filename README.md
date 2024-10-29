@@ -439,5 +439,5 @@ We also found clear trends in track releases over time, noticing both an increas
 
 ## Acknowledgement
 
-"I would like to extend my sincere gratitude to Ma’am Madee for her invaluable guidance. Her insights, encouragement, and dedication to teaching have greatly enriched my knowledge. Thank you, Ma’am Madee, for your mentorship and for inspiring me to approach each challenge with curiosity and determination."
+I would like to extend my sincere gratitude to Ma’am Madee for her invaluable guidance. Her insights, encouragement, and dedication to teaching have greatly enriched my knowledge. Thank you, Ma’am Madee, for your mentorship and for inspiring me to approach each challenge with curiosity and determination.
   
