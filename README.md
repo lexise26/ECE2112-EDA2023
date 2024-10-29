@@ -2,7 +2,7 @@
 
 Created by: **Custodio, Louise Angela G.** from **2ECE-D** 
 
-Date and Time Started: **October 21, 2024, 10:15 AM**  
+Date and Time Started: **October 21, 2024, 8:15 AM**  
 
 Date and Time Ended: **October 29, 2024, 6:48 PM**
 
