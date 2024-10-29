@@ -44,7 +44,7 @@ To start, we import essential libraries: Pandas for data manipulation, allowing 
 
 The next step involves loading the dataset from a CSV file obtained from Kaggle. Using `pd.read_csv('spotify-2023.csv', encoding='ISO-8859-1')`, the data is read into a Pandas DataFrame, allowing for easy organization and manipulation in a table-like structure. The specified encoding, `ISO-8859-1`, ensures special characters are correctly interpreted, which is sometimes necessary for datasets with non-standard characters. Displaying spotify_data confirms successful loading and provides a quick preview of the data’s structure, making it ready for further analysis and visualization.
 
-### **Overview of Dataset*
+### *Overview of Dataset*
 - How many rows and columns does the dataset contain?
 
       # Get the number of rows and columns by using the .shape function
