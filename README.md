@@ -41,7 +41,7 @@ To start, we import essential libraries: Pandas for data manipulation, allowing 
 
 ![image](https://github.com/user-attachments/assets/7ed14d3e-6d73-40c2-b184-a53b390a81a9)
 
-The next step involves loading the dataset from a CSV file obtained from Kaggle. Using pd.read_csv('spotify-2023.csv', encoding='ISO-8859-1'), the data is read into a Pandas DataFrame, allowing for easy organization and manipulation in a table-like structure. The specified encoding, ISO-8859-1, ensures special characters are correctly interpreted, which is sometimes necessary for datasets with non-standard characters. Displaying spotify_data confirms successful loading and provides a quick preview of the data’s structure, making it ready for further analysis and visualization.
+The next step involves loading the dataset from a CSV file obtained from Kaggle. Using `pd.read_csv('spotify-2023.csv', encoding='ISO-8859-1')`, the data is read into a Pandas DataFrame, allowing for easy organization and manipulation in a table-like structure. The specified encoding, `ISO-8859-1`, ensures special characters are correctly interpreted, which is sometimes necessary for datasets with non-standard characters. Displaying spotify_data confirms successful loading and provides a quick preview of the data’s structure, making it ready for further analysis and visualization.
 
 ### Overview of Dataset
 - How many rows and columns does the dataset contain?
@@ -50,7 +50,11 @@ The next step involves loading the dataset from a CSV file obtained from Kaggle.
 
       print('Rows:', rows)
       print('Columns:', cols)
-  
+
+  ![image](https://github.com/user-attachments/assets/efccf85b-8f89-4e33-a0b8-924ebef08a96)
+
+To assess the dataset’s size, we use the `shape` attribute in Pandas, which indicates it contains 953 rows and 24 columns. This means there are 953 data entries, each with 24 attributes. The `shape` attribute quickly reveals the dimensions of the DataFrame, helping to understand the dataset's scale and complexity for further analysis.
+
 - What are the data types of each column? Are there any missing values?
 
       data_types = spotify_data.dtypes
