@@ -426,8 +426,8 @@ Based on the analysis of the Spotify dataset, several insights can enhance under
 
 While the dataset does not include genre information, examining the attributes of top tracks may reveal successful genre blends, encouraging artists to experiment with diverse sounds. Emotional resonance in lyrics and themes is vital, as relatable content fosters deeper connections with listeners. Furthermore, leveraging social media platforms like TikTok and Instagram for promotion can generate buzz around new releases, while data-driven decision-making through analytics can provide valuable insights into audience demographics and preferences. By implementing these strategies, artists and industry professionals can significantly improve their chances of success in the competitive music streaming landscape.
 
-## [References]
 
-Most streamed Spotify Songs 2023. (2023, August 26). Kaggle. https://www.kaggle.com/datasets/nelgiriyewithana/top-spotify-songs-2023
-seaborn.load_dataset — seaborn 0.13.2 documentation. (n.d.). https://seaborn.pydata.org/generated/seaborn.load_dataset.html
+
+
+
   
