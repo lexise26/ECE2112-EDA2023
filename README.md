@@ -426,8 +426,15 @@ Based on the analysis of the Spotify dataset, several insights can enhance under
 
 While the dataset does not include genre information, examining the attributes of top tracks may reveal successful genre blends, encouraging artists to experiment with diverse sounds. Emotional resonance in lyrics and themes is vital, as relatable content fosters deeper connections with listeners. Furthermore, leveraging social media platforms like TikTok and Instagram for promotion can generate buzz around new releases, while data-driven decision-making through analytics can provide valuable insights into audience demographics and preferences. By implementing these strategies, artists and industry professionals can significantly improve their chances of success in the competitive music streaming landscape.
 
+## Conclusion
 
+This Spotify dataset analysis uncovered several interesting patterns and trends within its structure and content. With 953 rows and 24 columns, it captures a wide range of details about each track. Starting with data types and missing values, we checked its overall quality, then looked at the "streams" column using mean, median, and standard deviation to get a general sense of listening behavior. Visualizations of "released_year" and "artist_count" showed notable trends in release years and artist collaborations. Focusing on the most-streamed tracks and frequent artists helped us spot major players driving the dataset’s popularity metrics.
 
+We also found clear trends in track releases over time, noticing both an increase by year and a specific month with peak activity. Looking at correlations between streams and musical features like BPM, danceability, and energy revealed which characteristics tend to boost streaming numbers. Altogether, these insights give a solid overview of track popularity, release patterns, and how musical elements can influence streaming success.
+
+## Acknowledgement
+
+I would like to extend my sincere gratitude to Ma’am Madee for her invaluable guidance. Her insights, encouragement, and her dedication to teaching has greatly enriched my understanding. Thank you, Ma’am Madee, for your mentorship and for inspiring me to approach each challenge with curiosity and determination.
 
 
   
