@@ -28,6 +28,8 @@ Before anything else, importing the needed library is the first thing we need to
     import matplotlib.pyplot as plt
     import seaborn as sns
 
+![image](https://github.com/user-attachments/assets/7ed14d3e-6d73-40c2-b184-a53b390a81a9)
+
 Next is loading the data from the csv file from Kaggle.
 
     # Load the data from the CSV file and print the results
