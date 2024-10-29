@@ -78,7 +78,7 @@ To assess the dataset’s size, we use the `shape` attribute in Pandas, which in
 
 To identify the data types of each column and check for missing values in the dataset, we use the following code. The `dtypes` attribute provides the data type for each column, which helps us understand how the data is structured and what kind of operations can be performed. Additionally, the `isnull().sum()` method counts any missing values in each column. This information is crucial for ensuring data quality before analysis.
 
-### Basic Descriptive Statistics
+### *Basic Descriptive Statistics*
 - What are the mean, median, and standard deviation of the streams column?
 
       #Convert the streams column to numeric, setting non-numeric values to NaN
@@ -131,7 +131,7 @@ To analyze the "streams" column, we first convert all entries to numeric format 
 
 To analyze the distributions of "released_year" and "artist_count," we create histograms using Seaborn's `histplot()` with KDE overlays for better clarity. The **first subplot** displays the frequency of songs released across various years, revealing trends and peaks in specific years. The **second subplot** illustrates the distribution of artist counts, highlighting the frequency of songs with varying numbers of collaborating artists. These visualizations help identify noticeable trends, such as years with higher release frequencies and patterns in collaboration, while also revealing any potential outliers in the dataset.
 
-###  Top Performers
+###  *Top Performers*
 - Which track has the highest number of streams? Display the top 5 most streamed tracks.
 
       # Get top 5 tracks by sorting streams in descending order and reset index
@@ -160,7 +160,7 @@ To identify the track with the highest number of streams and display the top fiv
 
 To determine the top five most frequent artists based on the number of tracks in the dataset, we utilize the `value_counts()` method on the "artist(s)_name" column. This method counts how many times each artist appears in the dataset, allowing us to identify the most contributors. We then select the top five artists with `head(5)` and reset the index for a clearer presentation. The result is converted into a DataFrame for easy manipulation and is renamed to provide clarity in the output.
 
-### Temporal Trends
+### *Temporal Trends*
 - Analyze the trends in the number of tracks released over time. Plot the number of tracks released per year.
 
       # Count the number of tracks released each year from the dataset.
@@ -240,7 +240,7 @@ This code analyzes the trends in the number of tracks released over time by firs
 
 The code analyzes the number of tracks released each month in the dataset to identify patterns and determine the month with the highest releases. It begins by converting the `released_month` column to string format, ensuring consistent data processing. Next, it counts the tracks released in each month using `value_counts()` and sorts the results. A `dictionary maps` month strings to integers, allowing for proper sorting and indexing. The code then creates a bar plot using Seaborn to visualize the number of tracks released per month, with the x-axis representing the months and the y-axis showing the track counts. Finally, it identifies the month with the highest number of releases using `idxmax()` and prints this information along with the corresponding track count. 
 
-### Genre and Music Characteristics
+### *Genre and Music Characteristics*
 - Examine the correlation between streams and musical attributes like bpm, danceability_%, and energy_%. Which attributes seem to influence streams the most?
 
       # Specify the attributes for correlation analysis
@@ -327,7 +327,7 @@ The code analyzes the correlation between streams and musical attributes such as
 
 The code shows the correlation between musical attributes, specifically danceability and energy, as well as valence and acousticness. First, it defines the relevant attributes and calculates their correlation matrix using the `corr()` method. The correlations for the pairs of interest are printed to assess their relationships. Following this, scatter plots are created for both pairs to visualize the correlation between danceability and energy, and valence and acousticness. These visualizations help to discern patterns in how these musical characteristics interact, providing insights into their relationships within the dataset.
 
-### Platform Popularity
+### *Platform Popularity*
 - How do the numbers of tracks in spotify_playlists, spotify_charts, and apple_playlists compare? Which platform seems to favor the most popular tracks?
 
       # Calculate the total number of tracks included in different playlists and charts
@@ -355,7 +355,7 @@ The code shows the correlation between musical attributes, specifically danceabi
 
 The code evaluates the number of tracks featured in different playlists and charts across Spotify and Apple Music. It calculates the total count of tracks in Spotify playlists, Spotify charts, and Apple playlists by summing the respective columns in the dataset. The results for each platform are printed to compare their track counts. Subsequently, an `if-elif` statement determines which platform favors the most popular tracks based on the highest count, concluding with the identification of the platform that showcases the most popular tracks. This analysis provides insight into the distribution of popular tracks across various streaming services.
 
-### Advanced Analysis
+### *Advanced Analysis*
 - Based on the streams data, can you identify any patterns among tracks with the same key or mode (Major vs. Minor)?
 
       # Set the figure size for the plot
