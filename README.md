@@ -432,9 +432,11 @@ This Spotify dataset analysis uncovered several interesting patterns and trends 
 
 We also found clear trends in track releases over time, noticing both an increase by year and a specific month with peak activity. Looking at correlations between streams and musical features like BPM, danceability, and energy revealed which characteristics tend to boost streaming numbers. Altogether, these insights give a solid overview of track popularity, release patterns, and how musical elements can influence streaming success.
 
+## References
+
+- Most streamed Spotify Songs 2023. (2023, August 26). Kaggle. https://www.kaggle.com/datasets/nelgiriyewithana/top-spotify-songs-2023
+
 ## Acknowledgement
 
-I would like to extend my sincere gratitude to Ma’am Madee for her invaluable guidance. Her insights, encouragement, and her dedication to teaching has greatly enriched my understanding. Thank you, Ma’am Madee, for your mentorship and for inspiring me to approach each challenge with curiosity and determination.
-
-
+"I would like to extend my sincere gratitude to Ma’am Madee for her invaluable guidance. Her insights, encouragement, and dedication to teaching have greatly enriched my knowledge. Thank you, Ma’am Madee, for your mentorship and for inspiring me to approach each challenge with curiosity and determination."
   
