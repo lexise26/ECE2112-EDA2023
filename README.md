@@ -40,7 +40,7 @@ To start, we import essential libraries: Pandas for data manipulation, allowing 
       spotify_data = pd.read_csv('spotify-2023.csv', encoding='ISO-8859-1')
       spotify_data
 
-Output: ![image](https://github.com/user-attachments/assets/7ed14d3e-6d73-40c2-b184-a53b390a81a9)
+![image](https://github.com/user-attachments/assets/7ed14d3e-6d73-40c2-b184-a53b390a81a9)
 
 The next step involves loading the dataset from a CSV file obtained from Kaggle. Using `pd.read_csv('spotify-2023.csv', encoding='ISO-8859-1')`, the data is read into a Pandas DataFrame, allowing for easy organization and manipulation in a table-like structure. The specified encoding, `ISO-8859-1`, ensures special characters are correctly interpreted, which is sometimes necessary for datasets with non-standard characters. Displaying spotify_data confirms successful loading and provides a quick preview of the data’s structure, making it ready for further analysis and visualization.
 
@@ -67,6 +67,10 @@ To assess the dataset’s size, we use the `shape` attribute in Pandas, which in
 
       print("\nMissing Values in Each Column:")
       print(missing_values[missing_values > 0])
+
+![image](https://github.com/user-attachments/assets/36fc112c-9d88-4ced-8ddb-5655a7ab043d)
+
+To identify the data types of each column and check for missing values in the dataset, we use the following code. The `dtypes` attribute provides the data type for each column, which helps us understand how the data is structured and what kind of operations can be performed. Additionally, the `isnull().sum()` method counts any missing values in each column. This information is crucial for ensuring data quality before analysis.
 
 ### Basic Descriptive Statistics
 - What are the mean, median, and standard deviation of the streams column?
