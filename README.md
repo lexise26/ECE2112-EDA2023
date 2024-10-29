@@ -21,12 +21,16 @@ This repository contains a comprehensive exploratory data analysis (EDA) of the 
 ## Guide Questions
 Before anything else, importing the needed library is the first thing we need to do for the code to run smoothly.
 
+    # Importing the Pandas for data manipulation 
     import pandas as pd
+    
+    # Importing the Matplotlib and Seaborn for visualization
     import matplotlib.pyplot as plt
     import seaborn as sns
 
 Next is loading the data from the csv file from Kaggle.
 
+    # Load the data from the CSV file and print the results
     spotify_data = pd.read_csv('spotify-2023.csv', encoding='ISO-8859-1')
     spotify_data
 
