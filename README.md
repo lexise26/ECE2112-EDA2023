@@ -4,14 +4,14 @@ Created by: **Custodio, Louise Angela G.** from **2ECE-D**
 
 Date and Time Started: **October 21, 2024, 8:15 AM**  
 
-Date and Time Ended: **October 29, 2024, 6:48 PM**
+Date and Time Ended: **November 02, 2024, 6:48 PM**
 
-## Brief Description 
+## :page_facing_up: Brief Description 
 **Exploratory Data Analysis (EDA)** is a process of analyzing and summarizing datasets to identify patterns, trends, and relationships using visual and statistical methods. It helps in understanding the data's structure and guiding further analysis.
 
 This repository contains a comprehensive exploratory data analysis (EDA) of the Most Streamed Spotify Songs 2023 dataset, sourced from Kaggle. The analysis aims to visualize and interpret key features of popular tracks to extract meaningful insights about music trends and attributes. 
 
-#### Key Objectives:
+#### :pushpin: Key Objectives:
 ◦ **Dataset Overview**: Familiarize with the dataset structure, check for missing values, and identify data types.
 
 ◦ **Summary Statistics**: Provide metrics on streams, release dates, and musical attributes like BPM and danceability.
@@ -353,7 +353,11 @@ The code shows the correlation between musical attributes, specifically danceabi
       # Print the results of the most popular tracks
       print("\nPlatform with the most popular tracks:", most_favored_platform)
 
-![image](https://github.com/user-attachments/assets/8af291d3-da6b-4340-88e1-838d2d8602c5)
+Spotify Playlists Track Count: 4952842
+Deezer Playlists Track Count: 95859.0
+Apple Playlists Track Count: 64609
+
+Platform with the most popular tracks: Spotify Playlists
 
 The code evaluates the number of tracks featured in different playlists and charts across Spotify and Apple Music. It calculates the total count of tracks in Spotify playlists, Spotify charts, and Apple playlists by summing the respective columns in the dataset. The results for each platform are printed to compare their track counts. Subsequently, an `if-elif` statement determines which platform favors the most popular tracks based on the highest count, concluding with the identification of the platform that showcases the most popular tracks. This analysis provides insight into the distribution of popular tracks across various streaming services.
 
