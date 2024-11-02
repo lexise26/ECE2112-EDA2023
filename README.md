@@ -22,7 +22,7 @@ This repository contains a comprehensive exploratory data analysis (EDA) of the 
 
 ◦ **Insights & Recommendations**: Offer insights into what makes tracks popular, including patterns in artist frequency and platform preferences.
 
-## Guide Questions :question:
+## Guide Questions
 - Before anything else, importing the needed library is the first thing we need to do for the code to run smoothly.
 
       # Importing the Pandas for data manipulation 
@@ -44,7 +44,7 @@ To start, we import essential libraries: Pandas for data manipulation, allowing 
 
 The next step involves loading the dataset from a CSV file obtained from Kaggle. Using `pd.read_csv('spotify-2023.csv', encoding='ISO-8859-1')`, the data is read into a Pandas DataFrame, allowing for easy organization and manipulation in a table-like structure. The specified encoding, `ISO-8859-1`, ensures special characters are correctly interpreted, which is sometimes necessary for datasets with non-standard characters. Displaying spotify_data confirms successful loading and provides a quick preview of the data’s structure, making it ready for further analysis and visualization.
 
-### *Overview of Dataset*
+## *Overview of Dataset*
 - How many rows and columns does the dataset contain?
 
       # Get the number of rows and columns by using the .shape function
@@ -78,7 +78,7 @@ To assess the dataset’s size, we use the `shape` attribute in Pandas, which in
 
 To identify the data types of each column and check for missing values in the dataset, we use the following code. The `dtypes` attribute provides the data type for each column, which helps us understand how the data is structured and what kind of operations can be performed. Additionally, the `isnull().sum()` method counts any missing values in each column. This information is crucial for ensuring data quality before analysis.
 
-### *Basic Descriptive Statistics*
+## *Basic Descriptive Statistics*
 - What are the mean, median, and standard deviation of the streams column?
 
       #Convert the streams column to numeric, setting non-numeric values to NaN
@@ -131,7 +131,7 @@ To analyze the "streams" column, we first convert all entries to numeric format 
 
 To analyze the distributions of "released_year" and "artist_count," we create histograms using Seaborn's `histplot()` with KDE overlays for better clarity. The **first subplot** displays the frequency of songs released across various years, revealing trends and peaks in specific years. The **second subplot** illustrates the distribution of artist counts, highlighting the frequency of songs with varying numbers of collaborating artists. These visualizations help identify noticeable trends, such as years with higher release frequencies and patterns in collaboration, while also revealing any potential outliers in the dataset.
 
-###  *Top Performers*
+##  *Top Performers*
 - Which track has the highest number of streams? Display the top 5 most streamed tracks.
 
       # Get top 5 tracks by sorting streams in descending order and reset index
@@ -160,7 +160,7 @@ To identify the track with the highest number of streams and display the top fiv
 
 To determine the top five most frequent artists based on the number of tracks in the dataset, we utilize the `value_counts()` method on the "artist(s)_name" column. This method counts how many times each artist appears in the dataset, allowing us to identify the most contributors. We then select the top five artists with `head(5)` and reset the index for a clearer presentation. The result is converted into a DataFrame for easy manipulation and is renamed to provide clarity in the output.
 
-### *Temporal Trends*
+## *Temporal Trends*
 - Analyze the trends in the number of tracks released over time. Plot the number of tracks released per year.
 
       # Count the number of tracks released each year from the dataset.
@@ -239,7 +239,7 @@ This code analyzes the trends in the number of tracks released over time by firs
 
 The code analyzes the number of tracks released each month in the dataset to identify patterns and determine the month with the highest releases. It begins by converting the `released_month` column to string format, ensuring consistent data processing. Next, it counts the tracks released in each month using `value_counts()` and sorts the results. A `dictionary maps` month strings to integers, allowing for proper sorting and indexing. The code then creates a bar plot using Seaborn to visualize the number of tracks released per month, with the x-axis representing the months and the y-axis showing the track counts. Finally, it identifies the month with the highest number of releases using `idxmax()` and prints this information along with the corresponding track count. 
 
-### *Genre and Music Characteristics*
+## *Genre and Music Characteristics*
 - Examine the correlation between streams and musical attributes like bpm, danceability_%, and energy_%. Which attributes seem to influence streams the most?
 
       # Specify the attributes for correlation analysis
@@ -324,7 +324,7 @@ The code analyzes the correlation between streams and musical attributes such as
 
 The code shows the correlation between musical attributes, specifically danceability and energy, as well as valence and acousticness. First, it defines the relevant attributes and calculates their correlation matrix using the `corr()` method. The correlations for the pairs of interest are printed to assess their relationships. Following this, scatter plots are created for both pairs to visualize the correlation between danceability and energy, and valence and acousticness. These visualizations help to discern patterns in how these musical characteristics interact, providing insights into their relationships within the dataset.
 
-### *Platform Popularity*
+## *Platform Popularity*
 - How do the numbers of tracks in spotify_playlists, spotify_charts, and apple_playlists compare? Which platform seems to favor the most popular tracks?
 
       # Convert columns to numeric, coercing errors to NaN and filling NaN with 0 if needed
@@ -357,7 +357,7 @@ The code shows the correlation between musical attributes, specifically danceabi
 
 The code evaluates the number of tracks featured in different playlists and charts across Spotify and Apple Music. It calculates the total count of tracks in Spotify playlists, Spotify charts, and Apple playlists by summing the respective columns in the dataset. The results for each platform are printed to compare their track counts. Subsequently, an `if-elif` statement determines which platform favors the most popular tracks based on the highest count, concluding with the identification of the platform that showcases the most popular tracks. This analysis provides insight into the distribution of popular tracks across various streaming services.
 
-### *Advanced Analysis*
+## *Advanced Analysis*
 - Based on the streams data, can you identify any patterns among tracks with the same key or mode (Major vs. Minor)?
 
       # Set the figure size for the plot
@@ -422,22 +422,24 @@ The code examines the distribution of streams for tracks categorized by musical 
 
 The code analyzes the frequency of artist appearances in playlists and charts by counting each artist's occurrences in the dataset. It uses the `value_counts()` function on the `artist(s)_name` column to tally the number of times each artist appears and resets the index for organization. The resulting DataFrame is renamed for clarity, and a bar plot is generated to visualize the top 10 artists by appearance count. The plot features the number of appearances on the x-axis and artist names on the y-axis, with distinct colors for each artist. This visualization highlights which artists are most frequently featured in playlists and charts, indicating their popularity in the music industry.
 
-## Analysis of Spotify Dataset
+## :computer: Analysis of Spotify Dataset
 
 Based on the analysis of the Spotify dataset, several insights can enhance understanding of what makes a track popular. The increasing trend of artist collaborations indicates that featuring multiple artists can significantly boost a track's visibility and streaming numbers, suggesting that fostering partnerships between established and emerging artists can maximize audience reach. Additionally, the correlation between certain BPM ranges and higher energy levels with increased streams highlights the importance of incorporating upbeat tempos and energetic arrangements, particularly in genres like pop and dance. Timing also plays a crucial role; the analysis shows that releasing tracks during peak streaming periods, such as summer or holidays, can enhance listener engagement. 
 
 While the dataset does not include genre information, examining the attributes of top tracks may reveal successful genre blends, encouraging artists to experiment with diverse sounds. Emotional resonance in lyrics and themes is vital, as relatable content fosters deeper connections with listeners. Furthermore, leveraging social media platforms like TikTok and Instagram for promotion can generate buzz around new releases, while data-driven decision-making through analytics can provide valuable insights into audience demographics and preferences. By implementing these strategies, artists and industry professionals can significantly improve their chances of success in the competitive music streaming landscape.
 
-## Conclusion
+## :bulb: Conclusion
 
 This Spotify dataset analysis uncovered several interesting patterns and trends within its structure and content. With 953 rows and 24 columns, it captures a wide range of details about each track. Starting with data types and missing values, we checked its overall quality, then looked at the "streams" column using mean, median, and standard deviation to get a general sense of listening behavior. Visualizations of "released_year" and "artist_count" showed notable trends in release years and artist collaborations. Focusing on the most-streamed tracks and frequent artists helped us spot major players driving the dataset’s popularity metrics.
 
 We also found clear trends in track releases over time, noticing both an increase by year and a specific month with peak activity. Looking at correlations between streams and musical features like BPM, danceability, and energy revealed which characteristics tend to boost streaming numbers. Altogether, these insights give a solid overview of track popularity, release patterns, and how musical elements can influence streaming success.
 
-## References
+## :books: References
 
-- Most streamed Spotify Songs 2023. (2023, August 26). Kaggle. https://www.kaggle.com/datasets/nelgiriyewithana/top-spotify-songs-2023
-- seaborn: statistical data visualization — seaborn 0.13.2 documentation. (n.d.). https://seaborn.pydata.org/
+- Most streamed Spotify Songs 2023. (2023, August 26). Kaggle.
+  https://www.kaggle.com/datasets/nelgiriyewithana/top-spotify-songs-2023
+- seaborn: statistical data visualization — seaborn 0.13.2 documentation. (n.d.).
+  https://seaborn.pydata.org/
 
 ## Acknowledgement
 
