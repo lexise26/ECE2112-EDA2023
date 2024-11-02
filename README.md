@@ -4,7 +4,7 @@ Created by: **Custodio, Louise Angela G.** from **2ECE-D**
 
 Date and Time Started: **October 21, 2024, 8:15 AM**  
 
-Date and Time Ended: **November 02, 2024, 4:08 PM**
+Date and Time Ended: **November 02, 2024, 4:30 PM**
 
 ## :page_facing_up: Brief Description 
 **Exploratory Data Analysis (EDA)** is a process of analyzing and summarizing datasets to identify patterns, trends, and relationships using visual and statistical methods. It helps in understanding the data's structure and guiding further analysis.
@@ -440,6 +440,12 @@ We also found clear trends in track releases over time, noticing both an increas
   https://www.kaggle.com/datasets/nelgiriyewithana/top-spotify-songs-2023
 - seaborn: statistical data visualization — seaborn 0.13.2 documentation. (n.d.).
   https://seaborn.pydata.org/
+
+## :iphone: Tools 
+- Canvas
+- Anaconda Navigator: Jupyter Notebook
+- Google Chrome
+- ChatGPT
 
 ## Acknowledgement
 
