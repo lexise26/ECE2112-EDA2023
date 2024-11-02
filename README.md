@@ -4,7 +4,7 @@ Created by: **Custodio, Louise Angela G.** from **2ECE-D**
 
 Date and Time Started: **October 21, 2024, 8:15 AM**  
 
-Date and Time Ended: **November 02, 2024, 4:00 PM**
+Date and Time Ended: **November 02, 2024, 4:08 PM**
 
 ## :page_facing_up: Brief Description 
 **Exploratory Data Analysis (EDA)** is a process of analyzing and summarizing datasets to identify patterns, trends, and relationships using visual and statistical methods. It helps in understanding the data's structure and guiding further analysis.
