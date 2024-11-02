@@ -22,7 +22,7 @@ This repository contains a comprehensive exploratory data analysis (EDA) of the 
 
 ◦ **Insights & Recommendations**: Offer insights into what makes tracks popular, including patterns in artist frequency and platform preferences.
 
-## Guide Questions
+## Guide Questions :question:
 - Before anything else, importing the needed library is the first thing we need to do for the code to run smoothly.
 
       # Importing the Pandas for data manipulation 
