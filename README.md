@@ -1,4 +1,4 @@
-# Python: Exploratory Data Analysis on Spotify 2023 Dataset
+# Python: Exploratory Data Analysis on Spotify 2023 Dataset :notes:
 
 Created by: **Custodio, Louise Angela G.** from **2ECE-D** 
 
@@ -6,7 +6,7 @@ Date and Time Started: **October 21, 2024, 8:15 AM**
 
 Date and Time Ended: **October 29, 2024, 6:48 PM**
 
-## Brief Description
+## Brief Description 
 **Exploratory Data Analysis (EDA)** is a process of analyzing and summarizing datasets to identify patterns, trends, and relationships using visual and statistical methods. It helps in understanding the data's structure and guiding further analysis.
 
 This repository contains a comprehensive exploratory data analysis (EDA) of the Most Streamed Spotify Songs 2023 dataset, sourced from Kaggle. The analysis aims to visualize and interpret key features of popular tracks to extract meaningful insights about music trends and attributes. 
@@ -236,7 +236,6 @@ This code analyzes the trends in the number of tracks released over time by firs
       print('Month with the most releases:', month_names[most_releases_month - 1], '(', most_releases_count, 'tracks)')
 
 ![image](https://github.com/user-attachments/assets/4996406d-f1ad-4dce-ac87-e41e8370738e)
-![image](https://github.com/user-attachments/assets/c8bf1b25-d3b8-4db3-95b9-edf49d879681)
 
 The code analyzes the number of tracks released each month in the dataset to identify patterns and determine the month with the highest releases. It begins by converting the `released_month` column to string format, ensuring consistent data processing. Next, it counts the tracks released in each month using `value_counts()` and sorts the results. A `dictionary maps` month strings to integers, allowing for proper sorting and indexing. The code then creates a bar plot using Seaborn to visualize the number of tracks released per month, with the x-axis representing the months and the y-axis showing the track counts. Finally, it identifies the month with the highest number of releases using `idxmax()` and prints this information along with the corresponding track count. 
 
@@ -280,7 +279,6 @@ The code analyzes the number of tracks released each month in the dataset to ide
       plt.show()
 
 ![image](https://github.com/user-attachments/assets/b424e216-aa9f-4a2b-bf70-b524a3086bc9)
-![image](https://github.com/user-attachments/assets/5957ce18-d666-4230-a636-9aac9ec05ecc)
 
 The code analyzes the correlation between streams and musical attributes such as BPM, danceability, and energy percentage. It selects these attributes from the dataset and computes their correlation with the `streams` variable using the `corr()` method, displaying the results in descending order to identify the strongest relationships. Additionally, it creates scatter plots for each attribute against streams, allowing for a visual examination of their relationships. This analysis helps to determine which musical features most significantly influence streaming performance, offering insights into factors that contribute to a track's popularity.
 
@@ -323,35 +321,39 @@ The code analyzes the correlation between streams and musical attributes such as
       plt.show()
 
 ![image](https://github.com/user-attachments/assets/a8810a8d-01e6-45c7-8edb-398d1b8e8c07)
-![image](https://github.com/user-attachments/assets/16ecaf42-5153-4d57-8819-386266a5cfe5)
 
 The code shows the correlation between musical attributes, specifically danceability and energy, as well as valence and acousticness. First, it defines the relevant attributes and calculates their correlation matrix using the `corr()` method. The correlations for the pairs of interest are printed to assess their relationships. Following this, scatter plots are created for both pairs to visualize the correlation between danceability and energy, and valence and acousticness. These visualizations help to discern patterns in how these musical characteristics interact, providing insights into their relationships within the dataset.
 
 ### *Platform Popularity*
 - How do the numbers of tracks in spotify_playlists, spotify_charts, and apple_playlists compare? Which platform seems to favor the most popular tracks?
 
-      # Calculate the total number of tracks included in different playlists and charts
-      spotify_playlists_count = spotify_data['in_spotify_playlists'].sum()
-      spotify_charts_count = spotify_data['in_spotify_charts'].sum()
-      apple_playlists_count = spotify_data['in_apple_playlists'].sum()
+      # Convert columns to numeric, coercing errors to NaN and filling NaN with 0 if needed
+      spotify_data['in_spotify_playlists'] = pd.to_numeric(spotify_data['in_spotify_playlists'], errors='coerce').fillna(0)
+      spotify_data['in_deezer_playlists'] = pd.to_numeric(spotify_data['in_deezer_playlists'], errors='coerce').fillna(0)
+      spotify_data['in_apple_playlists'] = pd.to_numeric(spotify_data['in_apple_playlists'], errors='coerce').fillna(0)
+
+      # Sum the columns
+      spotify_playlists = spotify_data['in_spotify_playlists'].sum()
+      deezer_playlists = spotify_data['in_deezer_playlists'].sum()
+      apple_playlists = spotify_data['in_apple_playlists'].sum()
 
       # Print track counts for each platform
-      print("Spotify Playlists Track Count:", spotify_playlists_count)
-      print("Spotify Charts Track Count:", spotify_charts_count)
-      print("Apple Playlists Track Count:", apple_playlists_count)
+      print("Spotify Playlists Track Count:", spotify_playlists)
+      print("Deezer Playlists Track Count:", deezer_playlists)
+      print("Apple Playlists Track Count:", apple_playlists)
 
-      # Determine and print the platform with the highest track count using elif
-      if spotify_playlists_count > spotify_charts_count and spotify_playlists_count > apple_playlists_count:
+      # Determine and print the platform with the highest track count
+      if spotify_playlists > deezer_playlists and spotify_playlists > apple_playlists:
           most_favored_platform = "Spotify Playlists"
-      elif spotify_charts_count > apple_playlists_count:
-          most_favored_platform = "Spotify Charts"
+      elif deezer_playlists > apple_playlists:
+          most_favored_platform = "Deezer Playlists"
       else:
           most_favored_platform = "Apple Playlists"
 
-      # Print the results of most popular tracks
+      # Print the results of the most popular tracks
       print("\nPlatform with the most popular tracks:", most_favored_platform)
 
-![image](https://github.com/user-attachments/assets/1aa8eb62-87d1-4bdc-a9a3-0063f7c33d9f)
+![image](https://github.com/user-attachments/assets/8af291d3-da6b-4340-88e1-838d2d8602c5)
 
 The code evaluates the number of tracks featured in different playlists and charts across Spotify and Apple Music. It calculates the total count of tracks in Spotify playlists, Spotify charts, and Apple playlists by summing the respective columns in the dataset. The results for each platform are printed to compare their track counts. Subsequently, an `if-elif` statement determines which platform favors the most popular tracks based on the highest count, concluding with the identification of the platform that showcases the most popular tracks. This analysis provides insight into the distribution of popular tracks across various streaming services.
 
