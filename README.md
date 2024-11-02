@@ -4,7 +4,7 @@ Created by: **Custodio, Louise Angela G.** from **2ECE-D**
 
 Date and Time Started: **October 21, 2024, 8:15 AM**  
 
-Date and Time Ended: **November 02, 2024, 6:48 PM**
+Date and Time Ended: **November 02, 2024, 4:00 PM**
 
 ## :page_facing_up: Brief Description 
 **Exploratory Data Analysis (EDA)** is a process of analyzing and summarizing datasets to identify patterns, trends, and relationships using visual and statistical methods. It helps in understanding the data's structure and guiding further analysis.
@@ -22,7 +22,7 @@ This repository contains a comprehensive exploratory data analysis (EDA) of the 
 
 ◦ **Insights & Recommendations**: Offer insights into what makes tracks popular, including patterns in artist frequency and platform preferences.
 
-## Guide Questions
+## :thought_balloon: Guide Questions
 - Before anything else, importing the needed library is the first thing we need to do for the code to run smoothly.
 
       # Importing the Pandas for data manipulation 
@@ -353,11 +353,7 @@ The code shows the correlation between musical attributes, specifically danceabi
       # Print the results of the most popular tracks
       print("\nPlatform with the most popular tracks:", most_favored_platform)
 
-Spotify Playlists Track Count: 4952842
-Deezer Playlists Track Count: 95859.0
-Apple Playlists Track Count: 64609
-
-Platform with the most popular tracks: Spotify Playlists
+![image](https://github.com/user-attachments/assets/fb086e77-8449-4a0f-9a48-ec60391bd9b1)
 
 The code evaluates the number of tracks featured in different playlists and charts across Spotify and Apple Music. It calculates the total count of tracks in Spotify playlists, Spotify charts, and Apple playlists by summing the respective columns in the dataset. The results for each platform are printed to compare their track counts. Subsequently, an `if-elif` statement determines which platform favors the most popular tracks based on the highest count, concluding with the identification of the platform that showcases the most popular tracks. This analysis provides insight into the distribution of popular tracks across various streaming services.
 
@@ -422,7 +418,7 @@ The code examines the distribution of streams for tracks categorized by musical 
       plt.tight_layout()
       plt.show()
 
-  ![image](https://github.com/user-attachments/assets/1c5a3743-90d5-4fe4-bb38-3f57b6659ca1)
+![image](https://github.com/user-attachments/assets/1c5a3743-90d5-4fe4-bb38-3f57b6659ca1)
 
 The code analyzes the frequency of artist appearances in playlists and charts by counting each artist's occurrences in the dataset. It uses the `value_counts()` function on the `artist(s)_name` column to tally the number of times each artist appears and resets the index for organization. The resulting DataFrame is renamed for clarity, and a bar plot is generated to visualize the top 10 artists by appearance count. The plot features the number of appearances on the x-axis and artist names on the y-axis, with distinct colors for each artist. This visualization highlights which artists are most frequently featured in playlists and charts, indicating their popularity in the music industry.
 
