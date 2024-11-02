@@ -443,9 +443,20 @@ We also found clear trends in track releases over time, noticing both an increas
 
 ## :iphone: Tools 
 - Canvas
+
+is a web-based learning management system, or LMS. It is used by learning institutions, educators, and students to access and manage online course learning materials and communicate about skill development and learning achievement. 
+
 - Anaconda Navigator: Jupyter Notebook
+
+is a GUI tool that is included in the Anaconda distribution and makes it easy to configure, install, and launch tools such as Jupyter Notebook.
+ 
 - Google Chrome
+
+is a free web browser used for accessing the internet and running web-based applications.
+  
 - ChatGPT
+
+is an artificial intelligence (AI) chatbot that uses natural language processing to create humanlike conversational dialogue.
 
 ## Acknowledgement
 
