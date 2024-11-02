@@ -434,13 +434,6 @@ This Spotify dataset analysis uncovered several interesting patterns and trends 
 
 We also found clear trends in track releases over time, noticing both an increase by year and a specific month with peak activity. Looking at correlations between streams and musical features like BPM, danceability, and energy revealed which characteristics tend to boost streaming numbers. Altogether, these insights give a solid overview of track popularity, release patterns, and how musical elements can influence streaming success.
 
-## :books: References
-
-- Most streamed Spotify Songs 2023. (2023, August 26). Kaggle.
-  https://www.kaggle.com/datasets/nelgiriyewithana/top-spotify-songs-2023
-- seaborn: statistical data visualization — seaborn 0.13.2 documentation. (n.d.).
-  https://seaborn.pydata.org/
-
 ## :iphone: Tools 
 - **Canvas** is a web-based learning management system, or LMS. It is used by learning institutions, educators, and students to access and manage online course learning materials and communicate about skill development and learning achievement. 
 
@@ -449,6 +442,15 @@ We also found clear trends in track releases over time, noticing both an increas
 - **Google Chrome** is a free web browser used for accessing the internet and running web-based applications.
   
 - **ChatGPT** is an artificial intelligence (AI) chatbot that uses natural language processing to create humanlike conversational dialogue.
+
+## :books: References
+
+- Most streamed Spotify Songs 2023. (2023, August 26). Kaggle. https://www.kaggle.com/datasets/nelgiriyewithana/top-spotify-songs-2023
+- seaborn: statistical data visualization — seaborn 0.13.2 documentation. (n.d.). https://seaborn.pydata.org/
+- What is Canvas? (2024, October 16). Instructure Community. https://community.canvaslms.com/t5/Canvas-Basics-Guide/What-is-Canvas/ta-p/45
+- Mishra, A. (2020). Anaconda and Jupyter Notebook Setup. Machine Learning for iOS Developers, 287–296. https://doi.org/10.1002/9781119602927.app1
+- Barney, N. (2023, January 5). Google Chrome browser. Mobile Computing. https://www.techtarget.com/searchmobilecomputing/definition/Google-Chrome-browser
+- Hetler, A. (2024, November 1). What is ChatGPT? WhatIs. https://www.techtarget.com/whatis/definition/ChatGPT
 
 ## Acknowledgement
 
