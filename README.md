@@ -97,7 +97,7 @@ To identify the data types of each column and check for missing values in the da
       print('Median of the Streams:', spd_mid)
       print('Standard Deviation of the Streams:', spd_sd)
 
-![image](https://github.com/user-attachments/assets/dd82e3f8-b0b3-437c-bdcc-7b4068571465)
+![image](https://github.com/user-attachments/assets/ea0f07f6-57d3-43d4-a8bd-127afac0db77)
 
 To analyze the "streams" column, we first convert all entries to numeric format using `pd.to_numeric()`, which replaces non-numeric values with NaN. This is crucial to avoid calculation errors. We then remove any rows with NaN values in the "streams" column using `dropna()` to ensure our calculations are based on valid data. We calculate the mean, median, and standard deviation of the "streams," where the `.mean` gives the average, the `.median` indicates the middle value, and the standard deviation measures the variation among stream counts. Finally, we print these results to summarize the statistical properties of the "streams" column, enhancing our understanding of streaming patterns in the dataset.
 
@@ -140,7 +140,7 @@ To analyze the distributions of "released_year" and "artist_count," we create hi
       # Display the results with its column names
       top_5_tracks[['track_name', 'streams']]
 
-![image](https://github.com/user-attachments/assets/61b86032-ab83-4a7d-a0d9-0ceddf8f6041)
+![image](https://github.com/user-attachments/assets/dff4b54d-6412-47e0-bde3-e58ff143857d)
 
 To identify the track with the highest number of streams and display the top five most streamed tracks, we sort the dataset by the "streams" column in descending order using `sort_values()`. This allows us to arrange the tracks from the most to the least streamed. We then select the top five entries with the `head(5)` function and reset the index for a cleaner output. Finally, we display the "track_name" and "streams" columns to showcase the most popular tracks.
 
@@ -156,7 +156,7 @@ To identify the track with the highest number of streams and display the top fiv
       top_5_freqarts = top_5_freqarts.rename(columns={'index': 'artist(s)_name'})
       top_5_freqarts
 
-![image](https://github.com/user-attachments/assets/d85cff10-7cb4-4477-b37e-2cbbc27f99df)
+![image](https://github.com/user-attachments/assets/c3c65f09-5088-4368-945c-ec1b77e0090a)
 
 To determine the top five most frequent artists based on the number of tracks in the dataset, we utilize the `value_counts()` method on the "artist(s)_name" column. This method counts how many times each artist appears in the dataset, allowing us to identify the most contributors. We then select the top five artists with `head(5)` and reset the index for a clearer presentation. The result is converted into a DataFrame for easy manipulation and is renamed to provide clarity in the output.
 
